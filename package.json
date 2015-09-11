@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "description": "0.0.1",
   "main": "index.js",
-  "files": [
-   "pub.cmd"
-  ],
+  "scripts": {
+    "preinstall": "npm install -g rho & npm install -g jade & npm install -g juice & npm install -g inliner"  
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/indiamcq/vimod-pub-demo-email"
