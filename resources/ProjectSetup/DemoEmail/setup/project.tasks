@@ -1,0 +1,5 @@
+# project.tasks
+define project name                     ;var pcode "DemoEmail"
+                                        ;var header_list "h1"
+                                        ;checkdir "%projectpath%\xml"
+                                        ;projectxslt

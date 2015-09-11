@@ -1,0 +1,4 @@
+# ab-make-pdf.tasks
+get project variables                   ;projectvar
+run pdf creation task                   ;tasklist fop-fo2pdf.tasks "%projectpath%\%pcode%-pdf.fo"
+start pdf                               ;start "%projectpath%\%pcode%-pdf.pdf"

@@ -1,0 +1,3 @@
+# ab-make-fo.tasks
+get project variables                   ;projectvar
+run the heml 2 fo tasks                 ;tasklist fop-html2fo.tasks "%projectpath%\%pcode%-pdf.html"

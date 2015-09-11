@@ -1,0 +1,39 @@
+/* CSS Document */
+body {font-size:9.0pt;font-family:"Trebuchet MS",sans-serif; line-height: 150%;}
+h1 {font-family:"Gill Sans MT",sans-serif;color:#ED7D31;font-size: 15pt; margin: 0; padding: 10pt 0 3pt 0pt;}
+h2 {font-family:"Gill Sans MT",sans-serif;color:#ED7D31;font-size: 11.5pt;font-weight: normal; margin: 0pt; padding: 2pt 0 2pt;}
+hr.gray {color: silver; width: 150px; height: 1px; margin: 3em 0 3em 2em; }
+hr.info-start {color: white; width: 150px; height: 1px; margin: 3em 0 3em 2em; }
+li {}
+#sidebar h1 {font-family:"Gill Sans MT",sans-serif;font-size: 11.5pt;}
+#sidebar h2 {font-family:"Gill Sans MT",sans-serif;font-size: 11pt;font-weight:normal;}
+p { margin: 2pt 0 4pt 0}
+#sidebar p {line-height: 150%; padding: 6pt 0 6pt 0}
+td {font-size:9.0pt;font-family:"Trebuchet MS",sans-serif; line-height: 150%; }
+.layout {max-width: 800px; margin-left:auto; margin-right:auto;}
+
+/* banner */
+.banner { margin: auto;text-align: center;}
+.banner-subhead {font-weight:bold; font-style: italic;text-align: center;}
+.banner-date {font-weight:bold; text-align: center;}
+
+/* structure control */
+#content { margin-right:2em;padding-right:2em; border-right: 1px dashed silver;min-width: 400px;}
+#sidebar {padding-top: 2em;text-align: start;}
+
+/* Picture floats */
+.float-left {float: left;padding: 0pt 1em 2pt 0;}
+.float-right {float: right;padding: 0pt 0pt 6pt 1em;}
+.clear-both {clear:both}
+
+/* Paragraph types */
+.hanging {text-indent:-2em;}
+.indent-div {position:relative;left:2em}
+.please-note {text-align: center; font-weight: bold;padding-top: 2em;}
+.center {text-align: center;}
+.info-small {font-size:90%}
+hr.content-end-line {color: #ED7D31; width: 80%; height: 1px; text-align: center; }
+p + h2 {padding-top: 8pt}
+p.next-edition { padding: 2em 0 2em 0; width:100%; text-align: center;}
+.next-edition > span { padding: 0em 0 1em 0; border-bottom: 2px solid #ED7D31;}
+.small-in-header {font-size:9.0pt;font-weight:normal;min-width: 300px;}               

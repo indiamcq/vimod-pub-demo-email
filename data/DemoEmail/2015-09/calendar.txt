@@ -1,0 +1,5 @@
+---{.gray}
+
+# Calendar {.info}
+
+Next edition: *December 2015*

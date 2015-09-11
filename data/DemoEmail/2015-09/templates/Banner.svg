@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg2985"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="Banner.svg">
+  <defs
+     id="defs3" />
+  <sodipodi:namedview
+     inkscape:document-units="mm"
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="457.11062"
+     inkscape:cy="780.45239"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="1592"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#147ffe;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect2991"
+       width="614.17273"
+       height="144.45181"
+       x="71.720833"
+       y="31.09796"
+       inkscape:export-filename="C:\vimod-spinoff-project\vimod-DemoEmail\data\DemoEmail\2015-08\templates\banner.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3761"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#fffd1e;font-family:Sans;stroke-opacity:1;stroke-width:3.24891654000000020;stroke-miterlimit:4;stroke-dasharray:none"
+       transform="matrix(1.6366546,0,0,2.5631535,-96.116911,-152.93851)"
+       inkscape:export-filename="C:\vimod-spinoff-project\vimod-DemoEmail\data\DemoEmail\2015-08\templates\banner.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><flowRegion
+         id="flowRegion3763"><rect
+           id="rect3765"
+           width="541.44177"
+           height="91.923882"
+           x="106.06602"
+           y="56.351772"
+           style="fill:#ffffff;fill-opacity:1;stroke:#fffd1e;stroke-opacity:1;stroke-width:3.24891654000000020;stroke-miterlimit:4;stroke-dasharray:none" /></flowRegion><flowPara
+         id="flowPara3767"
+         style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;font-family:Eras Bold ITC;-inkscape-font-specification:Eras Bold ITC;stroke:#fffd1e;stroke-opacity:1;stroke-width:3.24891654000000020;stroke-miterlimit:4;stroke-dasharray:none">BULLETIN</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3769"
+       style="font-size:90px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:DomCasual BT;-inkscape-font-specification:DomCasual BT"
+       transform="matrix(1.0924169,-0.0824825,0.09904059,1.3117161,-17.093299,-221.26784)"
+       inkscape:export-filename="C:\vimod-spinoff-project\vimod-DemoEmail\data\DemoEmail\2015-08\templates\banner.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><flowRegion
+         id="flowRegion3771"><rect
+           id="rect3773"
+           width="587.90875"
+           height="146.47212"
+           x="84.852814"
+           y="218.98633"
+           style="font-size:90px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DomCasual BT;-inkscape-font-specification:DomCasual BT" /></flowRegion><flowPara
+         id="flowPara3775">Digital Publishing</flowPara></flowRoot>  </g>
+</svg>

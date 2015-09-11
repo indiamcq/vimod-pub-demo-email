@@ -1,0 +1,4 @@
+# vimod-make-sibling-project.tasks
+create new folder                       ;command "new-sibling-project.cmd"
+copy files                              ;ifnotexist "%newprojfolder%\*.*" xcopy "%projectpath%\*.*" \s
+message to user                         ;command "echo You have created a new project! You will need to edit/update some files in the new project."

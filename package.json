@@ -1,0 +1,24 @@
+{
+  "name": "Vimod_pubDemoEmail",
+  "version": "0.0.0",
+  "description": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/indiamcq/vimod-pub-demo-email"
+  },
+  "keywords": [
+    "html",
+    "publishing",
+    "email"
+  ],
+  "author": "Ian McQuay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/indiamcq/vimod-pub-demo-email/issues"
+  },
+  "homepage": "https://github.com/indiamcq/vimod-pub-demo-email"
+}

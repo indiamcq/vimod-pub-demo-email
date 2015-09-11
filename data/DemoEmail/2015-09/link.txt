@@ -1,0 +1,49 @@
+
+---{.gray}
+
+# Technology Links
+
+[Vimod-Pub build environment](http://projects.palaso.org/projects/vimod-pub)<br />
+[Inkscape SVG editor](https://inkscape.org/en/download/)<br />
+[Saxon HE 9 XSLT2 transformation engine](http://saxon.sourceforge.net/)<br />
+[Node Java Script](https://nodejs.org/) <br />
+[Rho markup language](https://www.npmjs.com/package/rho) <br />
+[Jade template engine](https://www.npmjs.com/package/jade) <br />
+[Juice CSS inline tool](https://www.npmjs.com/package/juice) <br />
+[Inliner image inline tool](https://www.npmjs.com/package/inliner) <br />
+[Firefox browser](https://www.mozilla.org/en-US/firefox/new/)  <br />
+[Apache FOP](https://xmlgraphics.apache.org/fop/)  <br />
+[CSStoXSLFO](http://www.re.be/css2xslfo/index.xhtml)  <br />
+
+# Digital Publishers
+
+[Scripture Earth](http://www.scriptureearth.org)  <br />
+[ebible.org](https://ebible.org/)  <br />
+[You Version]{https://www.bible.com/}  <br />
+[Bible Search](https://bibles.org/)  <br />
+[Bible Is](http://www.bible.is/)   <br />
+[Digital Bible Library](http://digitalbiblelibrary.org/)
+
+# Digital Publishing Software
+
+[Scripture App Builder](http://www.sil.org/resources/software_fonts/scripture-app-builder)  <br />
+[GoBible](http://go-bible.org/)  <br />
+[Lexique Pro](http://www.lexiquepro.com/) <br />
+[Dictionary App Builder](http://www.lexiquepro.com/dab/)  <br />
+[Dictionary for MIDs](http://dictionarymid.sourceforge.net/)  <br />
+[Fieldworks](http://fieldworks.sil.org/) <br />
+[Paratext](http://paratext.org/)  <br />
+[Pathway](http://pathway.sil.org/)
+
+# My Favourite Free Tools
+
+[PSPad](http://www.pspad.com/en/) <br />
+[First Object XML Editor](http://www.firstobject.com/) <br />
+[AutoHotKey](https://www.autohotkey.com/)
+
+# Language Web Site Demo
+
+[Ethnosites.org](http://ethnosites.org) <br />
+[Ethnosites.net](http://ethnosites.net) <br />
+[Ethnosites.com](http://ethnosites.com) <br />
+[Ethnosites.biz](http://ethnosites.biz)

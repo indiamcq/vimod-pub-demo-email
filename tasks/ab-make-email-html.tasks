@@ -1,0 +1,4 @@
+# ab-make-email-html.tasks
+get var                                 ;projectvar
+run node juice                          ;tasklist node-juice.tasks "%projectpath%\%pcode%.html" 
+run node inliner                        ;tasklist node-inliner.tasks "" "%projectpath%\%pcode%-email-final.html"

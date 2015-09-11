@@ -1,0 +1,10 @@
+# node-testing.tasks
+#                                        ;echoon
+get npm module to test                  ;var module %~2
+check if node is installed              ;ifnotexist "C:\Program Files\nodejs\node.exe" report "node.exe not found on your computer"
+check if node is installed              ;ifnotexist "C:\Program Files\nodejs\node.exe" report "You browser will opne at the download page. "
+check if node is installed              ;ifnotexist "C:\Program Files\nodejs\node.exe" report "You need to download and install it before continuing."
+check if node is installed              ;ifnotexist "C:\Program Files\nodejs\node.exe" command "call :start https://nodejs.org/download/"
+#                                        ;var nodepath tools\node_path\.bin
+check if jade is installed              ;ifnotexist "%userprofile%\AppData\Roaming\npm\%module%.cmd" command "npm install -g %module%" "%userprofile%\AppData\roaming\npm"
+#                                        ;echooff
