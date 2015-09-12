@@ -3,7 +3,7 @@
 
 We all want to send an email that will look good on every device. You can't solve every problem but you can do some simple things to ensure your email will render will on most devices.
 
-So this first edition of Digital Publishing Bulletin will focus on technologies that can be used to make an email that will render well accross device. The files used to make this edition can be found [here](http://projects.paalaso.org/vimodpub) and this email in HTML can be downloaded [here](XXXXXXX)
+So this first edition of Digital Publishing Bulletin will focus on technologies that can be used to make an email that will render well accros devices. The files used to make this edition can be found [https://github.com/indiamcq/vimod-pub-demo-email](https://github.com/indiamcq/vimod-pub-demo-email) and this email in HTML can be downloaded from there as well.
 
 The next section *Overview* is mildly technical, if you just want to try it, [jump to](#lk3) *Setting up your email project*.
 
@@ -21,10 +21,28 @@ When the HTML for the email looks good then we can process it further to make it
 
 To create your own email project using this method, 
 
-* download the [project shell](http://projects.paalaso.org/vimodpub). 
-* Unzip the file.
-* Within the unzipped files double click on pub.cmd
-* Then you should see the following
+## Installation 
+
+1. Download and install Node JavaScript, Windows Installer (.msi) 32 or 64 bit to suit your computer, from [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+2. Goto or create a folder where you want to install your script. (Not in **Program Files** as you need Admin approval for that area). Suggestion C:\node.
+3. Open a command prompt in your chosen folder. Hold down shift and right click on your chosen folder, then select **Open command window here**
+4. In the command prompt type `npm install indiamcq\vimod-pub-demo-email`
+
+The basic instalation is done. The last few line should look like this:
+
+```
+parser2@3.8.3, lodash@3.10.1)
++-- svgo@0.5.6 (whet.extend@0.9.9, colors@1.1.2, mkdirp@0.5.1, coa@1.0.1, sax@1.
+1.2, js-yaml@3.3.1)
+Vimod-Pub-Demo-Email@0.0.0 node_modules\Vimod-Pub-Demo-Email
+```
+
+There should be no red colored text indicating errors.
+
+## Accessing and testing the basic installation
+
+5. When all done, type in `cd node_modules\Vimod-Pub-Demo-Email`
+6. Then type in `pub`  then press \[enter\]
 
 {.center}
 ![Vimod menu 1](img/demoemail1-s.gif) <br />
@@ -86,6 +104,19 @@ Hyper links are similar to pictures but don't have the ! at the front. Unlike th
 *Bold* text is delimited like this \*before and after\*. _Italic_ text has \_before and after\_.
 
 [Fuller documentation is here.](https://github.com/inca/rho/blob/master/SYNTAX.md)
+
+## Sending the Email
+
+Using Thunderbird email client you can create a new email.
+ 
+* Then Ctrl+A to highlight the whole email. 
+* From the menu select Insert/HTML
+* From the email you have created using step b copy averything from between the <body> </body> tags and past into the Insert HTML dialog box.
+* Click Insert
+
+The Email looking as it looked in the browser should be visible. Once you add addresses the email is ready to go.
+
+See also: [Using Thunderbird Add-On](#tbaddon)
 
 # Technology stack  {#lk5}
 
@@ -242,3 +273,10 @@ Juice works in the Node.JS environment. It takes the external CSS or CSS in the 
 
 Inliner takes external pictures and embeds them in the email so that it is very portable. A forwarded email would have all the pictures included. Inliner also works in the Node.JS environment.
 
+## Banner creation
+
+The banner was created using Inkscape SVG editor. SVG (Scalable Vector Graphics). See the link to Inkscape in the sidebar.
+
+## Using Thunderbird Add-On to insert email {#tbaddon}
+
+A slightly easier wany to create your email in Thunderbird is to use an add-on called: viewsourcewith from [http://dafizilla.sourceforge.net/viewsourcewith/index.php](http://dafizilla.sourceforge.net/viewsourcewith/index.php) Once you set up an editor you can just open the entire HTML form Thunderbird in chosen editor and replace the whole HTML with your newly created HTML.
