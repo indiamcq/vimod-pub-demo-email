@@ -1,4 +1,4 @@
 make xhtml for making PDF                         ;tasklist ab-build-xhtml.tasks
 make inline email for sending                     ;tasklist ab-make-email-html.tasks
-create fo of AB HTML                              ;tasklist ab-make-fo.tasks
-create PDF of AB FO                               ;tasklist ab-make-pdf.tasks
+#create fo of AB HTML                              ;tasklist ab-make-fo.tasks
+#create PDF of AB FO                               ;tasklist ab-make-pdf.tasks
