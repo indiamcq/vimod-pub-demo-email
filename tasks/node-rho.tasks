@@ -14,4 +14,4 @@ declare infile                          ;infile "%~2"
 get drive path and name                 ;var drivepathname "%~dpn2"
 outfile                                 ;outfile "%~3" "%drivepathname%.html" 
 # the following uses the third parameter to ensure the file is made
-run the command line with the params    ;command "..\.bin\rho -i '%infile%' -o '%outfile%' --pretty" "" "%outfile%"
+run the command line with the params    ;command "rho -i '%infile%' -o '%outfile%' --pretty" "" "%outfile%"
