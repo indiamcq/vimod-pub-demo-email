@@ -21,4 +21,4 @@ outfile                                 ;outfile "%outputpath%%infilename%%outpu
 # the folloing two lines make the output path var and ouput ext var match the outfile var in the previous line.
 set default if ext not defined          ;ifnotdefined outputext var "outputext html"
 set default outpath                     ;ifnotdefined outputpath var "outputpath '%infilepath%'"
-use jade to make temp xml               ;command "jade -o '%outputpath:~0,-1%' -E %outputext:~1% -P '%infile%'" "" "%outfile%"
+use jade to make temp xml               ;command "..\.bin\jade -o '%outputpath:~0,-1%' -E %outputext:~1% -P '%infile%'" "" "%outfile%"
