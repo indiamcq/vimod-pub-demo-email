@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "0.0.1",
   "main": "index.js",
+  "scripts": {
+    "preinstall": "npm install -g rho & npm install -g jade & npm install -g juice & npm install -g inliner"  
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/indiamcq/vimod-pub-demo-email"
@@ -12,27 +15,11 @@
     "publishing",
     "email"
   ],
-  "author": {
-    "name": "Ian McQuay"
-  },
+  "author": "Ian McQuay",
   "license": "MIT",
-  "devDependencies": {
-    "jade": "~1.11.0",
-    "rho": "^0.2.3",
-    "inliner": "~1.3.0",
-    "juice": "~1.4.2"
-  },
   "bugs": {
     "url": "https://github.com/indiamcq/vimod-pub-demo-email/issues"
   },
-  "homepage": "https://github.com/indiamcq/vimod-pub-demo-email",
-  "readme": "# vimod-pub-demo-email\r\nDemo of Vimod-Pub making an emailable HTML\r\n",
-  "readmeFilename": "README.md",
-  "_id": "Vimod-Pub-Demo-Email@0.0.0",
-  "dist": {
-    "shasum": "d7aec2b57b77b148883a429248a6aa00127a43d9"
-  },
-  "_resolved": "git://github.com/indiamcq/vimod-pub-demo-email#2eacb092945f2c1dadbc46c3bf7f3e0149fb8808",
-  "_from": "git://github.com/indiamcq/vimod-pub-demo-email",
-  "_fromGithub": true
+  "homepage": "https://github.com/indiamcq/vimod-pub-demo-email"
 }
+
