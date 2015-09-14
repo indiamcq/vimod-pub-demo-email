@@ -1,15 +1,15 @@
 
 # Make an email that looks good for everyone
 
-We all want to send an email that will look good on every device. You can't solve every problem but you can do some simple things to ensure your email will render will on most devices.
+We all want to send an email that will look good on every device. You can't solve every problem but you can do some simple things to ensure your email will render well on most devices.
 
 So this first edition of Digital Publishing Bulletin will focus on technologies that can be used to make an email that will render well accros devices. The files used to make this edition can be found [https://github.com/indiamcq/vimod-pub-demo-email](https://github.com/indiamcq/vimod-pub-demo-email) and this email in HTML can be downloaded from there as well.
 
-The next section *Overview* is mildly technical, if you just want to try it, [jump to](#lk3) *Setting up your email project*.
+The next section *Overview* is mildly technical, if you just want to try it, jump to [*Setting up your email project*](#lk3).
 
 # Overview 
 
-The text of the email will be written in plain text markup language called Rho. It is similar to MarkDown language (used by GitHub.com) but adds `id` and `class` attributes. That makes Rho much more flexible in how you can make it look. That plain text is rendered into HTML fragments (no `html`, `head` or `body` elements). From there the main content is made into an XML document via Jade template engine. That XML is feed into a XSLT2 transformation that generates an unordered list `ul` with links to the `h1` elements. Then Jade is used again to make several outputs. One is the email HTML and another is a HTML ready via Firefox for creating a PDF and the last is a HTML to generate a PDF via Apache FOP. 
+The text of the email will be written in a plain text markup language called Rho. It is similar to MarkDown language (used by GitHub.com) but adds `id` and `class` attributes. That makes Rho much more flexible in how you can make it look. That plain text is rendered into HTML fragments (no `html`, `head` or `body` elements). From there the main content is made into an XML document via Jade template engine. That XML is feed into a XSLT2 transformations that generates ids in the xml and an unordered list `ul` with links to the `h1` elements. Then Jade is used again to make several outputs. One is the email HTML and another is a HTML ready via Firefox for creating a PDF.
 
 At this stage we look at the HTML in a browser to see how it looks. Did we do our markup consistently? Is the styling via the external Cascading Style Sheet (CSS) doing what we want it to do?
 
@@ -41,8 +41,11 @@ There should be no red colored text indicating errors.
 
 ## Accessing and testing the basic installation
 
-5. When all done, type in `cd node_modules\Vimod-Pub-Demo-Email`
+
+5. When all done, type in `cd node_modules\Vimod-Pub-Demo-Email`   
+
 6. Then type in `pub`  then press \[enter\]
+
 
 {.center}
 ![Vimod menu 1](img/demoemail1-s.gif) <br />
@@ -215,7 +218,7 @@ Note the first line calls the `;projectvar` that makes the *project.tasks* avail
 
 The next line after the comments has:
 
-`  ;tasklist node-rho.tasks "%projectpath%\banner-subhead.txt" "%projectpath%\xml\banner-subhead.html"`
+```  ;tasklist node-rho.tasks "%projectpath%\banner-subhead.txt" "%projectpath%\xml\banner-subhead.html"```
 
 So the current *ab-build-xhtml.tasks* tasklist will run another tasklist *node-rho.tasks*, that takes two variables, and input file and an output file. That same tasklist is used with other input and output. 
 

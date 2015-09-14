@@ -21,8 +21,7 @@ td {font-size:9.0pt;font-family:"Trebuchet MS",sans-serif; line-height: 150%; }
 
 /* structure control */
 #container {max-width:800px; margin-left:auto; margin-right:auto;}
-#content { float:left; max-width:580px; margin-right:2em;padding-right:2em; border-right: 1px dashed silver;}
-
+#content { float:left; max-width:580px; margin-right:2em;padding-right:2em; border-right: 1px dashed silver;word-break:normal;}
 #info {padding-top: 2em;text-align: start;min-width: 120px;}
 
 /* Picture floats */
