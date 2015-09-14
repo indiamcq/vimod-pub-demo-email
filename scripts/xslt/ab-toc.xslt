@@ -18,7 +18,7 @@
                   <xsl:for-each select="//*[local-name() = $header]">
                         <xsl:sort/>
                         <li class="{local-name()}">
-                              <a href="#lk{position()}">
+                              <a href="#{@id}">
                                     <xsl:value-of select="text()[1]"/>
                               </a>
                         </li>

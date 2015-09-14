@@ -4,7 +4,7 @@ html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="utf-8" lang="utf-8")
     title Demo Email
     link(rel='stylesheet', href='email.css', type='text/css')
   body
-    div.container(style="max-width:800px; margin-left:auto; margin-right:auto;")
+    div#container
       // banner starts after this
       div#banner
         div(style="max-width:700px;text-align: center;margin:auto;")
@@ -13,8 +13,7 @@ html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="utf-8" lang="utf-8")
         include ../xml/banner-subhead.html         
       // banner ends before this
       // main content starts after this
-      div#content(style="float:left;min-width: 300px; max-width: 600px")
-        include ../xml/content.html
+      include ../xml/content.xml
       // main content ends before this
       // right column content starts after this
       div#info

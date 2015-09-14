@@ -9,7 +9,7 @@
 #check if node is installed              ;ifnotexist "C:\Program Files\nodejs\node.exe" fatal "Node does not appear to be installed!"
 #check if jade is installed              ;ifnotexist "%userprofile%\AppData\Roaming\npm\juice.cmd" fatal "Juice does not appear to be installed! https://www.npmjs.com/package/jade"
 set module name                         ;var module jade
-test node and rho                       ;tasklist node-testing.tasks %module%
+#test node and rho                       ;tasklist node-testing.tasks %module%
 declare infile                          ;infile "%~2"
 get drive path and name                 ;var drivepathname "%~dpn2"
 declare infile  name                    ;var infilename "%~n2"
@@ -21,4 +21,4 @@ outfile                                 ;outfile "%outputpath%%infilename%%outpu
 # the folloing two lines make the output path var and ouput ext var match the outfile var in the previous line.
 set default if ext not defined          ;ifnotdefined outputext var "outputext html"
 set default outpath                     ;ifnotdefined outputpath var "outputpath '%infilepath%'"
-use jade to make temp xml               ;command "..\.bin\jade -o '%outputpath:~0,-1%' -E %outputext:~1% -P '%infile%'" "" "%outfile%"
+use jade to make temp xml               ;command "node_modules\.bin\jade -o '%outputpath:~0,-1%' -E %outputext:~1% -P '%infile%'" "" "%outfile%"

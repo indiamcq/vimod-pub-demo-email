@@ -20,8 +20,10 @@ td {font-size:9.0pt;font-family:"Trebuchet MS",sans-serif; line-height: 150%; }
 .banner-date {font-weight:bold; text-align: center;}
 
 /* structure control */
-#content { margin-right:2em;padding-right:2em; border-right: 1px dashed silver;min-width: 400px;}
-#info {padding-top: 2em;text-align: start;}
+#container {max-width:800px; margin-left:auto; margin-right:auto;}
+#content { float:left; max-width:580px; margin-right:2em;padding-right:2em; border-right: 1px dashed silver;}
+
+#info {padding-top: 2em;text-align: start;min-width: 120px;}
 
 /* Picture floats */
 .float-left {float: left;padding: 0pt 1em 2pt 0;}

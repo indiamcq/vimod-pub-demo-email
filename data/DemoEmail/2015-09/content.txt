@@ -1,5 +1,5 @@
 
-# Make an email that looks good for everyone{#lk1}
+# Make an email that looks good for everyone
 
 We all want to send an email that will look good on every device. You can't solve every problem but you can do some simple things to ensure your email will render will on most devices.
 
@@ -7,7 +7,7 @@ So this first edition of Digital Publishing Bulletin will focus on technologies 
 
 The next section *Overview* is mildly technical, if you just want to try it, [jump to](#lk3) *Setting up your email project*.
 
-# Overview {#lk2}
+# Overview 
 
 The text of the email will be written in plain text markup language called Rho. It is similar to MarkDown language (used by GitHub.com) but adds `id` and `class` attributes. That makes Rho much more flexible in how you can make it look. That plain text is rendered into HTML fragments (no `html`, `head` or `body` elements). From there the main content is made into an XML document via Jade template engine. That XML is feed into a XSLT2 transformation that generates an unordered list `ul` with links to the `h1` elements. Then Jade is used again to make several outputs. One is the email HTML and another is a HTML ready via Firefox for creating a PDF and the last is a HTML to generate a PDF via Apache FOP. 
 
@@ -17,7 +17,7 @@ If we just adjust the CSS then we only need to refresh the browser to update the
 
 When the HTML for the email looks good then we can process it further to make it ready to email. Juice takes the HTML and the CSS and combines them so that each style is applied to each element. The external CSS is no longer needed. Then that file is Inlined so that all the pictures are embedded in the HTML. This way you have a HTML that is very portable with everything (except fonts) in the one file.
 
-# Setting up your email project {#lk3}
+# Setting up your email project 
 
 To create your own email project using this method, 
 
@@ -81,7 +81,7 @@ Your main content goes into the *content.txt*. This needs my content removed and
 
 Once you have added some content double click on pub.cmd again and select the menu item you want and press `enter`. In your project folder under *data\DemoEmail\YouProject* You should find your email created ready for revising. This is an iterative process. Edit then remake HTML.
 
-## Rho Markup {#lk4}
+## Rho Markup 
 
 To create a headings use a one of more # at the beginning of a line: 
 
@@ -118,9 +118,9 @@ The Email looking as it looked in the browser should be visible. Once you add ad
 
 See also: [Using Thunderbird Add-On](#tbaddon)
 
-# Technology stack  {#lk5}
+# Technology stack  
 
-## Vimod-Pub {#lk6}
+## Vimod-Pub 
 
 [Vimod-Pub](http://projects.palaso.org/projects/vimod-pub) provides the setup and control framework to build the bits we need. It was designed to:
 
@@ -243,7 +243,7 @@ No tasklist is called as the XSLT handling is built into Vimod-Pub. The *ab-toc*
 
 I use PSPad to edit my .menu and .tasks files. I Have syntax highlighting to aid understanding.
                                                         
-## XSLT transformations {#lk7}
+## XSLT transformations 
 
 This project only has one transformation.
 
@@ -253,7 +253,7 @@ The missing transformation for this project would be to add the *id* anchors in 
 
 Saxon 9 HE is used as the XSLT9 transforation engine. This is a built in part of Vimod-Pub. 
 
-## Node Java Script {#lk8}
+## Node Java Script 
 
 Node JS provides a very collaborative environment. Follow this link to find out [more about Node.JS](https://nodejs.org/). The following tools all require Node to run.
 
@@ -277,6 +277,6 @@ Inliner takes external pictures and embeds them in the email so that it is very 
 
 The banner was created using Inkscape SVG editor. SVG (Scalable Vector Graphics). See the link to Inkscape in the sidebar.
 
-## Using Thunderbird Add-On to insert email {#tbaddon}
+## Using Thunderbird Add-On to insert email 
 
 A slightly easier wany to create your email in Thunderbird is to use an add-on called: viewsourcewith from [http://dafizilla.sourceforge.net/viewsourcewith/index.php](http://dafizilla.sourceforge.net/viewsourcewith/index.php) Once you set up an editor you can just open the entire HTML form Thunderbird in chosen editor and replace the whole HTML with your newly created HTML.

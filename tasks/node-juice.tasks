@@ -12,4 +12,4 @@ declare infile                          ;infile "%~2"
 get drive path and name                 ;var drivepathname "%~dpn2"
 outfile                                 ;outfile "%~3" "%drivepathname%-juice.html" 
 # the following uses the third parameter to ensure the file is made
-run the command line with the params    ;command "..\.bin\juice '%infile%' '%outfile%'" "" "%outfile%"
+run the command line with the params    ;command "node_modules\.bin\juice '%infile%' '%outfile%'" "" "%outfile%"

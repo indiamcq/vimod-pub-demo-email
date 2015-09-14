@@ -7,9 +7,9 @@
 # output needs to be an absolute path and file name and extention. The name is ignored output name will match the input name.
 # Warning do not edit this script, unless you know what you are doing.
 set module name                         ;var module inliner
-test node and rho                       ;tasklist node-testing.tasks %module%
+#test node and rho                       ;tasklist node-testing.tasks %module%
 declare infile                          ;infile "%~2"
 get drive path and name                 ;var drivepathname "%~dpn2"
 outfile                                 ;outfile "%~3" "%drivepathname%-inliner.html" 
 # the following uses the third parameter to ensure the file is made
-run the command line with the params    ;command2file "..\.bin\inliner '%infile%'" "%outfile%"
+run the command line with the params    ;command2file "node_modules\.bin\inliner '%infile%'" "%outfile%"
