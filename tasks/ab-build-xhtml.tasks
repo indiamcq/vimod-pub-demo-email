@@ -1,9 +1,10 @@
 project xst to define the projectpath   ;projectvar
-Make the txt into html                  ;tasklist node-rho.tasks "%projectpath%\banner-subhead.txt" "%projectpath%\xml\banner-subhead.html"
-Make the txt into html                  ;tasklist node-rho.tasks "%projectpath%\content.txt" "%projectpath%\xml\content.html"
-Make the txt into html                  ;tasklist node-rho.tasks "%projectpath%\calendar.txt" "%projectpath%\xml\calendar.html"
-Make the txt into html                  ;tasklist node-rho.tasks "%projectpath%\link.txt" "%projectpath%\xml\link.html"
-Make content xml for creating TOC       ;tasklist node-jade.tasks "%projectpath%\templates\content.jade" "%projectpath%\xml\content.xml"
+#Make the txt into html                  ;tasklist node-rho.tasks "%projectpath%\banner-subhead.txt" "%projectpath%\xml\banner-subhead.html"
+#Make the txt into html                  ;tasklist node-rho.tasks "%projectpath%\content.txt" "%projectpath%\xml\content.html"
+#Make the txt into html                  ;tasklist node-rho.tasks "%projectpath%\calendar.txt" "%projectpath%\xml\calendar.html"
+#Make the txt into html                  ;tasklist node-rho.tasks "%projectpath%\link.txt" "%projectpath%\xml\link.html"
+Make content xml for creating TOC       ;tasklist node-jade.tasks "%projectpath%\templates\content.jade" "%projectpath%\xml\content.xml1"
+Make TOC in ul                          ;xslt ab-add-id-to-elements "" "" "%projectpath%\xml\content.xml"
 Make TOC in ul                          ;xslt ab-toc "" "" "%projectpath%\xml\toc.html"
 #
 Make xhtml for PDF                      ;tasklist node-jade.tasks "%projectpath%\templates\%pcode%-pdf-firefox.jade"  "%projectpath%\%pcode%-pdf.html"

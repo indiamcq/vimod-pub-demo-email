@@ -10,7 +10,7 @@ html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="utf-8" lang="utf-8")
         div(style="max-width:700px;text-align: center;margin:auto;")
           span
             img#banner.banner(src='img/banner.png', alt='banner-image', width='100%')
-        include ../xml/banner-subhead.html         
+        include:rho ../banner-subhead.txt        
       // banner ends before this
       // main content starts after this
       div#content(style="float:left;min-width: 300px; max-width: 600px")
@@ -21,6 +21,6 @@ html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="utf-8" lang="utf-8")
         hr.gray
         h1 In this edition
         include ../xml/toc.html
-        include ../xml/calendar.html
-        include ../xml/link.html
+        include:rho ../calendar.txt
+        include:rho ../link.txt
       // right column content ends before thise

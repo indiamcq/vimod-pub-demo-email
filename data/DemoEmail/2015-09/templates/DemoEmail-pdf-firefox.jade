@@ -8,13 +8,13 @@ html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="utf-8" lang="utf-8")
     // banner starts after this
     div#banner
       img#banner.banner(src='img/banner.jpg', alt='banner-image', width='100%')
-      include ../xml/banner-subhead.html
+      include:rho ../banner-subhead.txt
     // banner ends before this
     // right column content starts after this
     div#info(style="float:right; width:40mm;")
       include ../xml/toc.html
-      include ../xml/calendar.html
-      include ../xml/link.html
+      include:rho ../calendar.txt
+      include:rho ../link.txt
     // right column content ends before thise
     // main content starts after this
     div#content
