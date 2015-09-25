@@ -1,4 +1,5 @@
 # ab-make-email-html.tasks
 get var                                 ;projectvar
-run node juice                          ;tasklist node-juice.tasks "%projectpath%\%pcode%.html" 
-run node inliner                        ;tasklist node-inliner.tasks "" "%projectpath%\%pcode%-email-final.html"
+Make xhtml for PDF                      ;tasklist node-jade.tasks "%projectpath%\templates\%pcode%-pdf-firefox.jade"  "%projectpath%\html-final\%pcode%-pdf.html"
+run node juice                          ;tasklist node-juice.tasks "%projectpath%\html-check\%pcode%.html" "%projectpath%\xml\%pcode%-juice.html"
+run node inliner                        ;tasklist node-inliner.tasks "" "%projectpath%\html-final\%pcode%-email-final.html"

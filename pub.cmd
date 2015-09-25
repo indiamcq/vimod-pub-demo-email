@@ -1927,14 +1927,18 @@ set dive=
 set curcommand=%command:'="% ^^^> "%outfile%"
 call :before
 set curcommand=%command:'="%
-if defined commandpath set drive=%commandpath:~0,2%
-if defined drive %drive%
-if defined commandpath cd "%commandpath%"
+if "%commandpath%" neq "" (
+  set drive=%commandpath:~0,2%
+  %drive%
+  cd "%commandpath%"
+) 
 call %curcommand% > "%outfile%"
-if defined commandpath set drive=%startdir:~0,2%
-if defined commandpath %drive%
-if defined commandpath cd "%startdir%"
-set dive=
+if "%commandpath%" neq "" (
+  set drive=%startdir:~0,2%
+  %drive%
+  cd "%startdir%"
+  set dive=
+)
 call :after "command with stdout %curcommand% complete"
 if defined masterdebug call :funcdebugend
 goto :eof

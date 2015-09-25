@@ -2,5 +2,5 @@ make xhtml for making email and PDF               ;tasklist ab-build-xhtml.tasks
 make html with inline css and pictures for email  ;tasklist ab-make-email-html.tasks
 #create fo of HTML                                 ;tasklist ab-make-fo.tasks
 #create PDF of FO                                  ;tasklist ab-make-pdf.tasks 
-make all steps                                    ;tasklist ab-make-all.tasks
+#make all steps                                    ;tasklist ab-make-all.tasks
 clone this project to a new sibling folder        ;tasklist new-project-sibling.tasks

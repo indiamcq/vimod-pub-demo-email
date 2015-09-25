@@ -45,7 +45,7 @@ There should be no red colored text indicating errors.
 6. Then type in `pub`  then press \[enter\]
 
 {.center}
-![Vimod menu 1](img/demoemail1-s.gif) <br />
+![Vimod menu 1](../img/demoemail1-s.gif) <br />
 1. Demo Email start screen.
 
 * Select *DemoEmail* by typing `a` then `enter`
@@ -139,13 +139,13 @@ The system works on Win7, 8 and 10. It is not tested on Win XP but may work but 
 Once a project is set up with a *project.menu* file and usually a *project.tasks* file, you can start the *pub.cmd* file. This brings up for me:
 
 {.center}
-![Vimod menu 1](img/vimod-menu1-s.gif) <br />
+![Vimod menu 1](../img/vimod-menu1-s.gif) <br />
 2. My Vimod-Pub with many groups of projects, some with sub groups.
 
 But you will see this:
 
 {.center}
-![Vimod menu 1](img/demoemail1-s.gif) <br />
+![Vimod menu 1](../img/demoemail1-s.gif) <br />
 3. Demo Email start screen.
 
 As above navigate to the project menu by:
@@ -156,7 +156,7 @@ As above navigate to the project menu by:
 You should then see:
 
 {.center}
-![Vimod menu 1](img/demoemail2-s.gif) <br />
+![Vimod menu 1](../img/demoemail2-s.gif) <br />
 3. Demo Email project menu.
 
 The initial menus you navigated were auto generated from the folder structure. When you arrived at _2015-09_ project the program detected that there was a *setup\project.menu* file. This file looks like this:
