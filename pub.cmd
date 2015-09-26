@@ -1445,10 +1445,12 @@ if defined masterdebug call :funcdebugend
 goto :eof
 
 :echoon
+:: Description: turns on echo for debugging
 @echo on
 goto :eof
 
 :echooff
+:: Description: turns off echo after debugging
 @echo off
 goto :eof
 
@@ -1547,7 +1549,7 @@ goto :eof
 
 
 :appendtofile
-:: Description: Func to append text to a file
+:: Description: Func to append text to a file or append text from another file
 :: Class: command
 :: Optional predefined variables:
 :: newfile
@@ -1707,6 +1709,7 @@ if "%count%" == "0" (
 goto :eof
 
 :menucounted
+:: Description: Another way of creating a menu
 :: Class: command - internal
 set list=%commonmenufolder%\%~1
 set menuoptions=
@@ -1922,12 +1925,12 @@ call :inccount
 set command=%~1
 call :outfile "%~2" "%projectpath%\xml\%pcode%-%count%-command2file.xml"
 set commandpath=%~3
-set startdir=%cd%
-set dive=
+rem the following is used for the feed back but not for the actual command
 set curcommand=%command:'="% ^^^> "%outfile%"
 call :before
 set curcommand=%command:'="%
 if "%commandpath%" neq "" (
+  set startdir=%cd%
   set drive=%commandpath:~0,2%
   %drive%
   cd "%commandpath%"
@@ -1947,14 +1950,13 @@ goto :eof
 :xvarset
 :xinclude
 :xarray
-:: Description: This is an XSLT instruction to process a paired set as param, dos var not allowed in set.
+:: Description: This is an XSLT instruction to process a paired set as param, DOS variables not allowed in set.
 :: Note: not used by this batch command. The xvarset is a text file that is line separated and = separated. Only a pair can occur on any line.
 goto :eof
 
 :menublank
 :: Description: used to create a blank line and if supplied a sub menu title
 :: Optional parameters:
-:: 
 goto :eof
 
 
